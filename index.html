@@ -302,6 +302,10 @@ window.Quarto = {
     <a class="dropdown-item" href="./teaching-visualisations/regularisation.html">
  <span class="dropdown-text">VMLS: Regularisation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-visualisations/constrained-least-squares.html">
+ <span class="dropdown-text">VMLS: Constrained least squares</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -417,7 +421,7 @@ Abstract
 </p>
 <div id="abstract-shortest-path-centrality" class="collapse">
 <p>
-The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of <span class="math inline">\(O(|E||V|^2\Delta(G))\)</span>, where <span class="math inline">\(|V|\)</span> is the number of vertices in the network, <span class="math inline">\(|E|\)</span> is the number of edges in the network, and <span class="math inline">\(\Delta(G)\)</span> is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of <span class="math inline">\(O(|E|^2|V|^2)\)</span> on both weighted and unweighted graphs. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.
+The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of <span class="math inline">\(O(|E||V|^2\Delta(G))\)</span>, where <span class="math inline">\(|V|\)</span> is the number of vertices in the network, <span class="math inline">\(|E|\)</span> is the number of edges in the network, and <span class="math inline">\(\Delta(G)\)</span> is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of <span class="math inline">\(O(|E|^2|V|^2)\)</span> on unweighted graphs and <span class="math inline">\(O(|E|^2|V|^2 + |V|^2\log(|V|))\)</span> on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.
 </p>
 </div>
 </div></li>
