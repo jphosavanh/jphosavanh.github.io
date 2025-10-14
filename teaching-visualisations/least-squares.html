@@ -44,6 +44,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-9c397cb09da994685e5757eadbac1855.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content="..">
+<script src="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/run-python-blocks.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/shinylive.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -326,9 +331,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="a-title" class="level2">
-<h2 class="anchored" data-anchor-id="a-title">A title</h2>
-<iframe width="780" height="500" src="https://example.com/" title="Webpage example"></iframe>
+<p>The data for this plot comes from <em>Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares</em> (Boyd and Vandenberghe, 2018).</p>
+<pre class="shinylive-python" data-engine="python"><code>#| '!! shinylive warning !!': |
+#|   shinylive does not work in self-contained HTML documents.
+#|   Please set `embed-resources: false` in your metadata.
+#| standalone: true
+#| viewerHeight: 600
+
+from shiny import App, render, ui, reactive
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+from shinywidgets import render_widget, output_widget
+
+def Z_func(x, y):
+    return (2*x - 1)**2 + (-x + y)**2 + (2*y + 1)**2
+
+app_ui = ui.page_fluid(
+    ui.layout_columns(
+        output_widget('curve'),
+        output_widget('contourplot')
+    ),
+)
+
+
+def server(input, output, session):
+
+    @render_widget
+    def curve():
+
+        X_lin  = np.arange(-1, 1.5, 0.05)
+        Y_lin = np.arange(-1.5, 1, 0.05)
+        X, Y = np.meshgrid(X_lin, Y_lin)
+        Z = Z_func(X, Y)
+
+        fig = go.Figure(data=[go.Surface(x=X, y=Y, z=Z, name='Curve', colorscale='Turbo')])
+        
+        fig = fig.update_layout(
+            autosize=True,
+            height=600,
+            margin=dict(l=65, r=50, b=65, t=90),
+            scene = dict(xaxis = dict(range=[-1, 1.5], title=dict(text='x_1')),
+                        yaxis = dict(range=[-1.5, 1], title=dict(text='x_2')),
+                        zaxis = dict(range=[np.min(Z) - (np.max(Z) - np.min(Z)) * 0.05, np.max(Z) + (np.max(Z) - np.min(Z)) * 0.05], title=dict(text=''))
+                        )
+            )
+        return fig
+
+    # ========================================================================
+
+    @render_widget
+    def contourplot():
+        X_lin  = np.arange(-1, 1.5, 0.05)
+        Y_lin = np.arange(-1.5, 1, 0.05)
+        X, Y = np.meshgrid(X_lin, Y_lin)
+        Z = Z_func(X, Y)
+
+        fig = go.Figure(data =
+            [go.Contour(
+                z=Z,
+                x=X_lin,
+                y=Y_lin, 
+                colorscale='Turbo',
+                contours=dict(
+                start=0.666666,
+                end=22.666666,
+                size=1,
+            ),
+            )])
+
+        fig = fig.update_layout(
+            autosize=True,
+            height=600,
+            margin=dict(l=65, r=50, b=65, t=90),
+            scene = dict(xaxis = dict(range=[-1, 1.5], title=dict(text='x_1')),
+                        yaxis = dict(range=[-1.5, 1], title=dict(text='x_2')),
+                        zaxis = dict(range=[np.min(Z) - (np.max(Z) - np.min(Z)) * 0.05, np.max(Z) + (np.max(Z) - np.min(Z)) * 0.05], title=dict(text=''))
+                        )
+            )
+        return fig
+
+    # ========================================================================
+
+
+app = App(app_ui, server)</code></pre>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Boyd, S. P., &amp; Vandenberghe, L. (2018). <em>Introduction to Applied Linear Algebra : Vectors, Matrices, and Least Squares</em> (First edition.). Cambridge University Press.</p>
 
 
 </section>
