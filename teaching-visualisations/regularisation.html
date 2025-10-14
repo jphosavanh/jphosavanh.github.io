@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Johnson Phosavanh</title>
+<title>VMLS: Regularisation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,32 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9c397cb09da994685e5757eadbac1855.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9c397cb09da994685e5757eadbac1855.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b4acf84f37d6d68f6a15c6fe27913e81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<meta name="shinylive:serviceworker_dir" content="..">
+<script src="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/run-python-blocks.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/shinylive-0.10.6/shinylive/shinylive.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,39 +77,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -273,7 +249,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -282,7 +258,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -291,15 +267,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching-visualisations">    
         <li>
-    <a class="dropdown-item" href="./teaching-visualisations/least-squares.html">
+    <a class="dropdown-item" href="../teaching-visualisations/least-squares.html">
  <span class="dropdown-text">VMLS: Least squares</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-visualisations/lighting-problem.html">
+    <a class="dropdown-item" href="../teaching-visualisations/lighting-problem.html">
  <span class="dropdown-text">VMLS: Lighting problem</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching-visualisations/regularisation.html">
+    <a class="dropdown-item" href="../teaching-visualisations/regularisation.html">
  <span class="dropdown-text">VMLS: Regularisation</span></a>
   </li>  
     </ul>
@@ -311,67 +287,26 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Johnson Phosavanh</li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/JohnsonPhosavanh.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./assets/JohnsonPhosavanh.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="mailto:johnson.phosavanh@sydney.edu.au" title="Contact me" class="quarto-navigation-tool px-1" aria-label="Contact me"><i class="bi bi-envelope"></i></a>
-    <a href="https://github.com/jphosavanh/" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="./assets/cv.pdf" title="CV" class="quarto-navigation-tool px-1" aria-label="CV"><i class="bi bi-file-earmark-person"></i></a>
-</div>
-      </div>
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About me</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a>
-  <ul class="collapse">
-  <li><a href="#peer-reviewed-articles" id="toc-peer-reviewed-articles" class="nav-link" data-scroll-target="#peer-reviewed-articles">Peer reviewed articles</a></li>
-  <li><a href="#articles-under-review" id="toc-articles-under-review" class="nav-link" data-scroll-target="#articles-under-review">Articles under review</a></li>
-  <li><a href="#conferences" id="toc-conferences" class="nav-link" data-scroll-target="#conferences">Conferences</a></li>
-  </ul></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
-  <li><a href="#scholarships-awards" id="toc-scholarships-awards" class="nav-link" data-scroll-target="#scholarships-awards">Scholarships &amp; Awards</a>
-  <ul class="collapse">
-  <li><a href="#research-1" id="toc-research-1" class="nav-link" data-scroll-target="#research-1">Research</a></li>
-  <li><a href="#teaching-1" id="toc-teaching-1" class="nav-link" data-scroll-target="#teaching-1">Teaching</a></li>
-  <li><a href="#academic" id="toc-academic" class="nav-link" data-scroll-target="#academic">Academic</a></li>
-  </ul></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Johnson Phosavanh</h1>
+<h1 class="title">VMLS: Regularisation</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -383,249 +318,170 @@ window.Quarto = {
 </header>
 
 
-<section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">About me</h2>
-<p>I am final year PhD candidate at the Discipline of Business Analytics at the University of Sydney, supervised by <a href="https://www.sydney.edu.au/business/about/our-people/academic-staff/daniel-oron.html">Professor Daniel Oron</a> and <a href="https://www.sydney.edu.au/business/about/our-people/academic-staff/nam-ho-nguyen.html">Dr Nam Ho-Nguyen</a>. My research area is combinatorial optimization with a particular focus on scheduling theory and optimization with graphs.</p>
-</section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><strong>Doctor of Philosophy (Business)</strong> <br> <em>The University of Sydney</em> <span class="cvdate"><em>Jul 2022 — Dec 2025</em></span></p>
-<ul>
-<li>Thesis title: <em>Dynamic scheduling problems</em>.</li>
-</ul>
-<p><strong>Bachelor of Advanced Studies (Honours)</strong> <br> <em>The University of Sydney</em> <span class="cvdate"><em>Feb 2021 — Dec 2021</em></span></p>
-<ul>
-<li>First Class Honours with University Medal.</li>
-<li>Honours in Business Analytics.</li>
-</ul>
-<p><strong>Bachelor of Science</strong> <br> <em>The University of Sydney</em> <span class="cvdate"><em>Feb 2018 — Dec 2020</em></span></p>
-<ul>
-<li>Majors in Business Analytics and Data Science.</li>
-</ul>
-</section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<section id="peer-reviewed-articles" class="level3">
-<h3 class="anchored" data-anchor-id="peer-reviewed-articles">Peer reviewed articles</h3>
-<ol type="1">
-<li><p><strong>Phosavanh J.</strong>, Matsypura, D. (2025). Centrality of shortest paths: algorithms and complexity results. To appear in the <em>INFORMS Journal on Computing</em>.</p>
-<div class="no-print">
-<p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-shortest-path-centrality" aria-expanded="false" aria-controls="abstract-shortest-path-centrality">
-Abstract
-</button>
-</p>
-<div id="abstract-shortest-path-centrality" class="collapse">
-<p>
-The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of <span class="math inline">\(O(|E||V|^2\Delta(G))\)</span>, where <span class="math inline">\(|V|\)</span> is the number of vertices in the network, <span class="math inline">\(|E|\)</span> is the number of edges in the network, and <span class="math inline">\(\Delta(G)\)</span> is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of <span class="math inline">\(O(|E|^2|V|^2)\)</span> on both weighted and unweighted graphs. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.
-</p>
-</div>
-</div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions. <em>Journal of Scheduling</em>. <a href="https://doi.org/10.1007/s10951-025-00853-0">10.1007/s10951-025-00853-0</a>.</p>
-<div class="no-print">
-<p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-rma-weighted" aria-expanded="false" aria-controls="abstract-rma-weighted">
-Abstract
-</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-rma-weighted" aria-expanded="false" aria-controls="bibtex-rma-weighted">
-BibTeX
-</button>
-</p>
-<div id="abstract-rma-weighted" class="collapse">
-<p>
-We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.
-</p>
-</div>
-<div id="bibtex-rma-weighted" class="collapse">
-<pre><code>@article{PhosavanhOron2025JoSH,
-title = {Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions},
-journal = {Journal of Scheduling},
-year = {2025},
-doi = {10.1007/s10951-025-00853-0},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Two-agent scheduling, Single-machine, Rate-modifying activity, Dynamic programming},
-}</code></pre>
-</div>
-</div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Minimizing the number of late jobs and total late work with step-learning. <em>European Journal of Operational Research, 321</em>(3), 734–749. <a href="https://doi.org/10.1016/j.ejor.2024.09.042">https://doi.org/10.1016/j.ejor.2024.09.042</a>.</p>
-<div class="no-print">
-<p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-step-learning" aria-expanded="false" aria-controls="abstract-step-learning">
-Abstract
-</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-step-learning" aria-expanded="false" aria-controls="bibtex-step-learning">
-BibTeX
-</button>
-</p>
-<div id="abstract-step-learning" class="collapse">
-<p>
-We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is <span class="math inline">\(\mathcal{NP}\)</span>-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly <span class="math inline">\(\mathcal{NP}\)</span>-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.
-</p>
-</div>
-<p></p>
-<div id="bibtex-step-learning" class="collapse">
-<pre><code>@article{PhosavanhOron2025EJOR,
-title = {Minimizing the number of late jobs and total late work with step-learning},
-journal = {European Journal of Operational Research},
-year = {2025},
-issn = {0377-2217},
-volume = {321},
-number = {3},
-pages = {734-749},
-doi = {10.1016/j.ejor.2024.09.042},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Scheduling, Single-machine, Step-learning, Dynamic programming},
-}</code></pre>
-</div>
-</div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2024). Two-agent single-machine scheduling with a rate-modifying activity. <em>European Journal of Operational Research, 312</em>(3), 866–876. <a href="http://doi.org/10.1016/j.ejor.2023.08.002">http://doi.org/10.1016/j.ejor.2023.08.002</a>.</p>
-<div class="no-print">
-<p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-rma" aria-expanded="false" aria-controls="abstract-rma">
-Abstract
-</button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-rma" aria-expanded="false" aria-controls="bibtex-rma">
-BibTeX
-</button>
-</p>
-<div id="abstract-rma" class="collapse">
-<p>
-We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary <span class="math inline">\(\mathcal{NP}\)</span>-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.
-</p>
-</div>
-<p></p>
-<div id="bibtex-rma" class="collapse">
-<pre><code>@article{PhosavanhOron2024,
-title = {Two-agent single-machine scheduling with a rate-modifying activity},
-journal = {European Journal of Operational Research},
-year = {2024},
-volume = {312},
-pages = {866-876},
-number = {3},
-issn = {0377-2217},
-doi = {10.1016/j.ejor.2023.08.002},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Scheduling, Single machine, Two-agents, Dynamic programming},
-}</code></pre>
-</div>
-</div></li>
-</ol>
-</section>
-<section id="articles-under-review" class="level3">
-<h3 class="anchored" data-anchor-id="articles-under-review">Articles under review</h3>
-<ol type="1">
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Minimizing total weighted late work with step-learning on a single machine. Submitted to <em>Discrete Applied Mathematics</em> (1st round R&amp;R).</p>
-<div class="no-print">
-<p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-step-learning-weighted" aria-expanded="false" aria-controls="abstract-step-learning-weighted">
-Abstract
-</button>
-</p>
-<div id="abstract-step-learning-weighted" class="collapse">
-<p>
-We study single-machine scheduling problems with step-learning to minimize the total weighted late work. Step-learning is a mechanism that allows jobs to be completed more efficiently if started after a job-dependent learning-date. We show that this problem is strongly <span class="math inline">\(\mathcal{NP}\)</span>-hard when both learning-dates and due-dates are arbitrary, but when at least one is assumed to be the same for all jobs, the problem is <span class="math inline">\(\mathcal{NP}\)</span>-hard in the ordinary sense, and we provide pseudo-polynomial algorithms for these cases.
-</p>
-</div>
-</div></li>
-</ol>
-</section>
-<section id="conferences" class="level3">
-<h3 class="anchored" data-anchor-id="conferences">Conferences</h3>
-<ol type="1">
-<li><strong>Phosavanh J.</strong>, Oron, D. (2025, June 22 – 25). Single-machine scheduling with cooperative agents and nondisjoint job sets. 34th <em>European Conference on Operational Research (EURO 2025)</em>, Leeds, United Kingdom.</li>
-<li><strong>Phosavanh J.</strong>, Oron, D. (2024, December 4 – 6). Minimizing the number of late jobs and total late work with step-learning. <em>Workshop on Optimisation, Metric Bounds, Approximation and Transversality (WOMBAT)</em>, Sydney, NSW, Australia.</li>
-<li><strong>Phosavanh J.</strong>, Oron, D. (2024, October 20 – 23). Minimizing the number of late jobs and total late work with step-learning. <em>2024 INFORMS Annual Meeting</em>, Seattle, WA, United States of America.</li>
-<li><strong>Phosavanh J.</strong>, Oron, D. (2024, June 30 – July 3). Minimizing the number of late jobs and total late work with step-learning. 33rd <em>European Conference on Operational Research (EURO 2024)</em>, Copenhagen, Denmark.</li>
-<li><strong>Phosavanh J.</strong>, Matsypura, D. (2023, December 11 – 16). Finding the most central shortest path in a graph. <em>Joint Workshop on Optimisation, Metric Bounds, Approximation and Transversality (WOMBAT) and Workshop on the Intersections of Computation and Optimisation (WICO)</em>, Sydney, NSW, Australia.</li>
-<li><strong>Phosavanh J.</strong>, Matsypura, D. (2023, October 15 – 18). Finding the most central shortest path in a graph. <em>2023 INFORMS Annual Meeting</em>, Phoenix, AZ, United States of America.</li>
-<li><strong>Phosavanh J.</strong>, Oron, D. (2023, June 5 – 6). Single-machine scheduling with two competing agents and rate-modifying activities with weighted due-date related functions. <em>The Fourth International Workshop on Dynamic Scheduling Problems (IWDSP 2023)</em>, Winterthur, Switzerland.</li>
-<li><strong>Phosavanh J.</strong>, Oron, D. (2022, December 6 – 9). Two-agent single-machine scheduling with a rate-modifying activity. <em>66th Annual Meeting of the Australian Mathematical Society (AustMS)</em>, Sydney, NSW, Australia.</li>
-</ol>
-</section>
-</section>
-<section id="teaching" class="level2">
-<h2 class="anchored" data-anchor-id="teaching">Teaching</h2>
-<p><strong>The University of Sydney</strong></p>
-<ul>
-<li>QBUS1040: Foundations of Business Analytics
-<ul>
-<li>Coordinator &amp; Lecturer: Semester 1, 2025 – Semester 2, 2025</li>
-<li>Head tutor: Semester 1, 2022 – Semester 2, 2024</li>
-<li>Tutor: Semester 2, 2021</li>
-<li>Lab demonstrator: Semester 1, 2019 – Semester 1, 2021</li>
-</ul></li>
-<li>QBUS2310: Management Science
-<ul>
-<li>Head tutor: Semester 1, 2022 – Semester 2, 2024</li>
-</ul></li>
-<li>QBUS6820: Prescriptive Analytics: From Data to Decision
-<ul>
-<li>Head tutor: Semester 1, 2023</li>
-</ul></li>
-<li>DATA1001: Foundations of Data Science
-<ul>
-<li>Lab demonstrator: Semester 1, 2020 – Semester 2, 2020</li>
-</ul></li>
-<li>MATH1005: Statistical Thinking with Data
-<ul>
-<li>Lab demonstrator: Semester 2, 2020</li>
-</ul></li>
-</ul>
-</section>
-<section id="scholarships-awards" class="level2">
-<h2 class="anchored" data-anchor-id="scholarships-awards">Scholarships &amp; Awards</h2>
-<section id="research-1" class="level3">
-<h3 class="anchored" data-anchor-id="research-1">Research</h3>
-<ul>
-<li>Enhanced Business School Research Scholarship, 2022 – 2025.</li>
-<li>Postgraduate Research Support Scheme, 2025.</li>
-<li>Discipline of Business Analytics Student Paper Prize Winner, 2024.</li>
-<li>Postgraduate Research Support Scheme, 2024.</li>
-<li>Research Travel Support Scheme, 2024.</li>
-<li>Research Travel Support Scheme, 2023.</li>
-<li>The Westbrook and Jessie Anstice Honours Scholarship in Business, 2021.</li>
-<li>Denison Research Scholarship, 2019 – 2020.</li>
-</ul>
-</section>
-<section id="teaching-1" class="level3">
-<h3 class="anchored" data-anchor-id="teaching-1">Teaching</h3>
-<ul>
-<li>2024 Dean’s Award for Feedback for Teaching (FFT).
-<ul>
-<li>Awarded in recognition of outstanding performance tof an individual instructor demonstrating and reflecting upon exceptional teaching.</li>
-</ul></li>
-<li>Feedback for Teaching (FFT) Student Survey Award for Teaching.
-<ul>
-<li>Awarded in recognition of individual instructors based on high overall evaluations from students on the FFT:
-<ul>
-<li>QBUS1040, Semester 1, 2024.</li>
-<li>QBUS2310, Semester 1, 2024.</li>
-<li>QBUS1040, Semester 2, 2023.</li>
-</ul></li>
-</ul></li>
-<li>2022 Discipline of Business Analytics Teaching Excellence Award.
-<ul>
-<li>Awarded in recognition of outstanding achievement in teaching within the Discipline of Business Analytics.</li>
-</ul></li>
-</ul>
-</section>
-<section id="academic" class="level3">
-<h3 class="anchored" data-anchor-id="academic">Academic</h3>
-<ul>
-<li>University of Sydney Academic Merit Prize, 2021.</li>
-<li>Dean’s List of Excellence in Academic Performance, 2021.</li>
-<li>University of Sydney Academic Merit Prize, 2020.</li>
-<li>Dean’s List of Excellence in Academic Performance, 2020.</li>
-<li>University of Sydney Academic Merit Prize, 2019.</li>
-<li>Discipline of Business Analytics Prize in 2nd year Quantitative Business: 2019.</li>
-<li>Tim Brown Prize No 1 for Intermediate Statistics, 2019.</li>
-<li>Dean’s List of Excellence in Academic Performance, 2019.</li>
-<li>Dean’s List of Excellence in Academic Performance, 2018.</li>
-</ul>
+<pre class="shinylive-python" data-engine="python"><code>#| '!! shinylive warning !!': |
+#|   shinylive does not work in self-contained HTML documents.
+#|   Please set `embed-resources: false` in your metadata.
+#| standalone: true
+#| viewerHeight: 620
+
+from shiny import App, render, ui, reactive
+import numpy as np
+import matplotlib.pyplot as plt
+
+def vandermonde(t, n):
+    m = t.shape[0]
+    A = np.zeros((m, n))
+
+    for j in range(m):
+        for i in range(n):
+            A[j, i] = t[j]**i
+
+    return A
+
+def rms(y):
+    return np.linalg.norm(y) / np.sqrt(y.shape[0])
+
+np.random.seed(10)
+N_train = 10
+x_train = np.random.uniform(low=-3, high=3, size=N_train)
+true = np.array([-3, -2.7, -2, 0.8, 0.5])
+deg1 = true.shape[0]
+y_train = vandermonde(x_train, deg1) @ true + np.random.normal(scale=3, size=N_train)
+
+N_test = 20
+x_test = np.random.uniform(low=-3, high=3, size=N_test)
+y_test = vandermonde(x_test, deg1) @ true + np.random.normal(scale=3, size=N_test)
+
+x_plot = np.linspace(np.min(np.concatenate([x_train, x_test])), np.max(np.concatenate([x_train, x_test])))
+A_plot = vandermonde(x_plot, deg1)
+y_true = A_plot @ true
+
+L = 1000
+lambdas = 10**np.linspace(-4, 7, L)
+theta_hats = np.zeros((L, deg1))
+
+A_train = vandermonde(x_train, deg1)
+A_test = vandermonde(x_test, deg1)
+
+rms_train = np.zeros(L)
+rms_test = np.zeros(L)
+J1 = np.zeros(L)
+J2 = np.zeros(L)
+
+for i in range(L):
+    lamb = lambdas[i]
+    A_reg = np.sqrt(lamb)*np.eye(deg1)
+    A_reg = A_reg[1:]
+    A_tilde = np.concatenate((A_train, A_reg), axis=0)
+    zeros = np.zeros(deg1-1)
+    y_tilde = np.concatenate((y_train, zeros))
+    theta_hat = np.linalg.pinv(A_tilde) @ y_tilde
+
+    rms_train[i] = rms(A_train @ theta_hat - y_train)
+    rms_test[i] = rms(A_test @ theta_hat - y_test)
+
+    theta_hats[i] = theta_hat
+
+    J1[i] = np.linalg.norm(A_train @ theta_hat - y_train) ** 2
+    J2[i] = np.linalg.norm(theta_hat[1:]) ** 2
+
+app_ui = ui.page_fluid(
+    ui.layout_sidebar(
+        ui.sidebar(
+            ui.input_slider('lamb', '10^λ', min=-4, max=7, value=-4, step = 0.1)
+        ),
+        ui.layout_columns(
+        ui.card(
+            ui.output_plot("mainplot", height="240px"),
+            ui.output_plot("pareto_plot", height="240px"), 
+        ),
+        ui.card(
+            ui.output_plot("shrinkage_plot", height="240px"),
+            ui.output_plot("error_plot", height="240px"), 
+        ),
+        ),
+    ),
+)
 
 
-</section>
-</section>
+def server(input, output, session):
+
+    @render.plot
+    def mainplot():
+        A_reg = np.sqrt(10**input.lamb())*np.eye(deg1)
+        A_reg = A_reg[1:]
+        A_tilde = np.concatenate((A_train, A_reg), axis=0)
+        zeros = np.zeros(deg1-1)
+        y_tilde = np.concatenate((y_train, zeros))
+        theta_hat = np.linalg.pinv(A_tilde) @ y_tilde
+
+        fig, ax = plt.subplots()
+        ax.scatter(x_train, y_train, label='Training')
+        ax.scatter(x_test, y_test, label='Test')
+        ax.plot(x_plot, y_true, c='black', label='True')
+        ax.plot(x_plot, A_plot @ theta_hat, c='red', label='Fitted', linewidth=4)
+        ax.legend()
+
+        return fig
+
+    # ========================================================================
+
+    @render.plot
+    def pareto_plot():
+        A_reg = np.sqrt(10**input.lamb())*np.eye(deg1)
+        A_reg = A_reg[1:]
+        A_tilde = np.concatenate((A_train, A_reg), axis=0)
+        zeros = np.zeros(deg1-1)
+        y_tilde = np.concatenate((y_train, zeros))
+        theta_hat = np.linalg.pinv(A_tilde) @ y_tilde
+
+        j1 = np.linalg.norm(A_train @ theta_hat - y_train) ** 2
+        j2 = np.linalg.norm(theta_hat[1:]) ** 2
+
+        fig, ax = plt.subplots()
+        ax.plot(J1, J2)
+        ax.vlines(j1, 0, j2, color='black')
+        ax.hlines(j2, 0, j1, color='black')
+        ax.set_xscale('log')
+        ax.set_xlabel('J1')
+        ax.set_ylabel('J2')
+        return fig
+
+    # ========================================================================
+
+    @render.plot
+    def shrinkage_plot():
+        fig, ax = plt.subplots()
+        cols = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+        for i in range(deg1):
+            ax.plot(lambdas, theta_hats[:, i], label='$\\theta_{}$'.format(i+1))
+            ax.axhline(true[i], c=cols[i], linestyle='dashed')
+
+        ax.axvline(10**input.lamb(), c='black', linestyle='dashed')
+        ax.set_xlabel('$\\lambda$')
+        ax.set_ylabel('$\\theta$')
+        ax.set_xscale('log')
+        ax.legend()
+        return fig
+
+    # ========================================================================
+
+    @render.plot
+    def error_plot():
+        fig, ax = plt.subplots()
+        ax.plot(lambdas, rms_train, label='Train error')
+        ax.plot(lambdas, rms_test, label='Test error')
+        ax.axvline(10**input.lamb(), c='black', linestyle='dashed')
+        ax.set_xscale('log')
+        ax.set_xlabel('$\\lambda$')
+        ax.set_ylabel('RMS Error')
+        ax.legend()
+        return fig
+
+
+app = App(app_ui, server)</code></pre>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -274,6 +274,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../teaching-visualisations/lighting-problem.html">
  <span class="dropdown-text">VMLS: Lighting problem</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../teaching-visualisations/regularisation.html">
+ <span class="dropdown-text">VMLS: Regularisation</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -288,11 +292,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -302,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -314,6 +324,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The data for this plot comes from <em>Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares</em> (Boyd and Vandenberghe, 2018).</p>
 <pre class="shinylive-python" data-engine="python"><code>#| '!! shinylive warning !!': |
 #|   shinylive does not work in self-contained HTML documents.
 #|   Please set `embed-resources: false` in your metadata.
@@ -397,8 +408,12 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)</code></pre>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Boyd, S. P., &amp; Vandenberghe, L. (2018). Introduction to Applied Linear Algebra : Vectors, Matrices, and Least Squares (First edition.). Cambridge University Press.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
