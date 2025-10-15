@@ -109,7 +109,7 @@
     "href": "teaching-tools/canvasapi.html#introduction",
     "title": "canvasapi",
     "section": "Introduction",
-    "text": "Introduction\nInfrastructure, the developers of the Canvas LMS, provide an API that allows users to interact programmatically with Canvas. Documentation here.\ncanvasapi is a Python wrapper for the Canvas API that was initally developed by a team at the University of Central Florida. Documentation here"
+    "text": "Introduction\nInfrastructure, the developers of the Canvas LMS, provide an API that allows users to interact programmatically with Canvas. Documentation here.\ncanvasapi is a Python wrapper for the Canvas API that was initally developed by a team at the University of Central Florida. Documentation here."
   },
   {
     "objectID": "teaching-tools/canvasapi.html#getting-started",
