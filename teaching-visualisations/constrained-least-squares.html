@@ -351,11 +351,14 @@ gtag('config', 'G-B09M8VXHE0', { 'anonymize_ip': true});
 #| standalone: true
 #| viewerHeight: 600
 
+## file: app.py
+
 from shiny import App, render, ui, reactive
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from shinywidgets import render_widget, output_widget
+from pathlib import Path
 
 def Z_func(x, y):
     return x ** 2 + y ** 2
