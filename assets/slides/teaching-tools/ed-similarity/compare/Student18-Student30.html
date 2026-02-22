@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="../assets/pure.css">
+        <link rel="stylesheet" type="text/css" href="../assets/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="../assets/compare.css">
+
+		<title>Student18 x Student30 : Fibonacci results</title>
+
+        <script>
+			var d1 = "# Get user input\nn = int(input(\"Which term? \"))\n\n# Compute Fibonacci sequence iteratively\na, b = 1, 1\nfor _ in range(n - 2):\n    a, b = b, a + b\n\n# Print the nth Fibonacci number\nprint(a if n == 1 else b)\n\n";
+			var d1_index = [0,206];
+			var d1_files = ["fibonacci.py"];
+			var d2 = "n = int(input(\"Which term? \"))\na, b = 1, 1\nfor _ in range(n - 2):\n    a, b = b, a + b  \nprint(1 if n == 1 else b) \n";
+			var d2_index = [0,115];
+			var d2_files = ["fibonacci.py"];
+			var regions = [{"id":0,"doc1":{"start":17,"end":203},"doc2":{"start":0,"end":112}}];
+		</script>
+
+        <script src="../assets/codemirror.js"></script>
+        <script src="../assets/d3.js"></script>
+        <script src="../assets/compare.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="filler">
+                <div class="split-container">
+                    <div class="split">
+                        <div class="header">Student18</div>
+                        <div class="legend left-legend"></div>
+						<div class="content">
+							<textarea class="left-content"></textarea>
+						</div>
+                    </div>
+
+                    <div class="split split-right">
+                        <div class="header">Student30</div>
+                        <div class="legend right-legend"></div>
+						<div class="content">
+							<textarea class="right-content"></textarea>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

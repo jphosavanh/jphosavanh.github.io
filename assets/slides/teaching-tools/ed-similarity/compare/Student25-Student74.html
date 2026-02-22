@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="../assets/pure.css">
+        <link rel="stylesheet" type="text/css" href="../assets/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="../assets/compare.css">
+
+		<title>Student25 x Student74 : Fibonacci results</title>
+
+        <script>
+			var d1 = "import numpy as np\nterm=int(input('Which term? '))\nseq = np.array([1,1])\nfor i in range(term-2):\n    n= seq[0] + seq[1]\n    next_num = np.array([n])\n    \n    seq= np.concatenate((next_num,seq))\nprint(seq[0])\n";
+			var d1_index = [0,208];
+			var d1_files = ["fibonacci.py"];
+			var d2 = "import numpy as np\nterm=int(input('Which term? '))\nseq=np.array([1,1])\nfor i in range (term-2):\n    n=seq[0]+seq[1]\n    next_num=np.array([n])\n    seq=np.concatenate((next_num,seq))\nprint(seq[0])\n\n";
+			var d2_index = [0,197];
+			var d2_files = ["fibonacci.py"];
+			var regions = [{"id":0,"doc1":{"start":0,"end":205},"doc2":{"start":0,"end":193}}];
+		</script>
+
+        <script src="../assets/codemirror.js"></script>
+        <script src="../assets/d3.js"></script>
+        <script src="../assets/compare.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="filler">
+                <div class="split-container">
+                    <div class="split">
+                        <div class="header">Student25</div>
+                        <div class="legend left-legend"></div>
+						<div class="content">
+							<textarea class="left-content"></textarea>
+						</div>
+                    </div>
+
+                    <div class="split split-right">
+                        <div class="header">Student74</div>
+                        <div class="legend right-legend"></div>
+						<div class="content">
+							<textarea class="right-content"></textarea>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

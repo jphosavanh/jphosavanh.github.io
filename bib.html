@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>bib</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assets/logo.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-292da17cba5b85372dd6ccebd333db54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9c397cb09da994685e5757eadbac1855.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-292da17cba5b85372dd6ccebd333db54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B09M8VXHE0"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-B09M8VXHE0', { 'anonymize_ip': true});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching-visualisations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching visualisations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching-visualisations">    
+        <li>
+    <a class="dropdown-item" href="./teaching-visualisations/least-squares.html">
+ <span class="dropdown-text">VMLS: Least squares</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-visualisations/lighting-problem.html">
+ <span class="dropdown-text">VMLS: Lighting problem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-visualisations/regularisation.html">
+ <span class="dropdown-text">VMLS: Regularisation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-visualisations/constrained-least-squares.html">
+ <span class="dropdown-text">VMLS: Constrained least squares</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching-tools">    
+        <li>
+    <a class="dropdown-item" href="./teaching-tools/canvasapi.html">
+ <span class="dropdown-text">canvasapi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teaching-tools/OTA.html">
+ <span class="dropdown-text">OTA tool</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:johnson.phosavanh@sydney.edu.au"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jphosavanh/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./assets/cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=6Tz7f2kAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="ai  ai-google-scholar" aria-label="google-scholar"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-3073-5230"> 
+<span class="menu-text"><i class="ai  ai-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<div id="72fb6f52" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> bibtexparser</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pybtex.plugin <span class="im">import</span> find_plugin</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pybtex.database <span class="im">import</span> parse_file</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>APA <span class="op">=</span> find_plugin(<span class="st">'pybtex.style.formatting'</span>, <span class="st">'apa7'</span>)()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>HTML <span class="op">=</span> find_plugin(<span class="st">'pybtex.backends'</span>, <span class="st">'html'</span>)()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_df(bibfile, author<span class="op">=</span><span class="st">'Phosavanh, J.'</span>):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    library <span class="op">=</span> parse_file(bibfile, <span class="st">'bibtex'</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    formatted_bib <span class="op">=</span> APA.format_bibliography(library)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    keys <span class="op">=</span> [entry.key <span class="cf">for</span> entry <span class="kw">in</span> formatted_bib.entries]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    html_list <span class="op">=</span> [entry.text.render(HTML).replace(<span class="st">'doi:'</span>, <span class="st">'https://doi.org/'</span>).replace(<span class="st">'</span><span class="ch">\n</span><span class="st">'</span>, <span class="st">''</span>).replace(author, <span class="ss">f'&lt;strong&gt;</span><span class="sc">{</span>author<span class="sc">}</span><span class="ss">&lt;</span><span class="ch">\\</span><span class="ss">strong&gt;'</span>) <span class="cf">for</span> entry <span class="kw">in</span> formatted_bib]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    html <span class="op">=</span> pd.Series(<span class="bu">dict</span>(<span class="bu">zip</span>(keys, html_list)), name<span class="op">=</span><span class="st">'html'</span>).to_frame()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    authors_list <span class="op">=</span> [<span class="bu">str</span>(entry.text.parts[<span class="dv">0</span>]) <span class="cf">for</span> entry <span class="kw">in</span> formatted_bib]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    authors <span class="op">=</span> pd.Series(<span class="bu">dict</span>(<span class="bu">zip</span>(keys, authors_list)), name<span class="op">=</span><span class="st">'authors'</span>).to_frame()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    library <span class="op">=</span> bibtexparser.parse_file(bibfile)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    abstract_bib <span class="op">=</span> pd.Series({key: library.entries_dict[key][<span class="st">'abstract'</span>] <span class="cf">for</span> key <span class="kw">in</span> keys}, name<span class="op">=</span><span class="st">'abstract'</span>).to_frame()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    raw_bib <span class="op">=</span> pd.Series({key: library.entries_dict[key].raw <span class="cf">for</span> key <span class="kw">in</span> keys}, name<span class="op">=</span><span class="st">'bib'</span>).to_frame()</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    year_bib <span class="op">=</span> pd.Series({key: <span class="bu">int</span>(library.entries_dict[key][<span class="st">'year'</span>]) <span class="cf">for</span> key <span class="kw">in</span> keys}, name<span class="op">=</span><span class="st">'year'</span>).to_frame()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.concat([year_bib, authors, html, raw_bib, abstract_bib], axis<span class="op">=</span><span class="dv">1</span>).sort_values(<span class="st">'authors'</span>).sort_values(<span class="st">'year'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_site_html(bibfile, sep_year<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> get_df(bibfile)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    entries <span class="op">=</span> []</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> index, row <span class="kw">in</span> df.iterrows():</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        entries.append(<span class="ss">f'''1.  </span><span class="sc">{</span>row[<span class="st">'html'</span>]<span class="sc">}</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">    :::</span><span class="ch">{{</span><span class="ss">.no-print</span><span class="ch">}}</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;p&gt;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">" aria-expanded="false" aria-controls="abstract-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">"&gt;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">        Abstract</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">      &lt;/button&gt;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">" aria-expanded="false" aria-controls="bibtex-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">"&gt;</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">        BibTeX</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;/button&gt;</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;/p&gt;</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;div class="collapse" id="abstract-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">"&gt;</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">      &lt;p&gt;</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">        </span><span class="sc">{</span>row[<span class="st">'abstract'</span>]<span class="sc">}</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">      &lt;/p&gt;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;/div&gt;</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;div class="collapse" id="bibtex-</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss">"&gt;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">      ```</span><span class="ch">{{}}</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="sc">{</span>row[<span class="st">'bib'</span>]<span class="sc">}</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">      ```</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">    &lt;/div&gt;</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">    :::</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">'</span><span class="ch">\n\n</span><span class="st">'</span>.join(entries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="0a2a01b0" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>bibfile <span class="op">=</span> <span class="st">'assets/pubs.bib'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>get_df(bibfile)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">authors</th>
+<th data-quarto-table-cell-role="th">html</th>
+<th data-quarto-table-cell-role="th">bib</th>
+<th data-quarto-table-cell-role="th">abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">PhosavanhMatsypura2025</th>
+<td>2025</td>
+<td>Phosavanh, J. &amp; Matsypura, D.</td>
+<td>&lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Matsypura...</td>
+<td>@article{PhosavanhMatsypura2025,\n title = ...</td>
+<td>The centrality of a node is often used to meas...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">PhosavanhOron2025EJOR</th>
+<td>2025</td>
+<td>Phosavanh, J. &amp; Oron, D.</td>
+<td>&lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(...</td>
+<td>@article{PhosavanhOron2025EJOR,\n title = {...</td>
+<td>We study single-machine scheduling problems wi...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">PhosavanhOron2025JoS</th>
+<td>2025</td>
+<td>Phosavanh, J. &amp; Oron, D.</td>
+<td>&lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(...</td>
+<td>@article{PhosavanhOron2025JoS,\n title = {S...</td>
+<td>We analyze two-agent scheduling problems with ...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">PhosavanhOron2024</th>
+<td>2024</td>
+<td>Phosavanh, J. &amp; Oron, D.</td>
+<td>&lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(...</td>
+<td>@article{PhosavanhOron2024,\n title = {Two-...</td>
+<td>We study single-machine scheduling problems in...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="092aa453" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(get_site_html(bibfile, sep_year<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1.  &lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Matsypura, D.(2025).Centrality of shortest paths: algorithms and complexity result.&lt;em&gt;INFORMS Journal on Computing&lt;/em&gt;.Advance online publication.&lt;a href="https://doi.org/10.1287/ijoc.2024.0945"&gt;https://doi.org/10.1287/ijoc.2024.0945&lt;/a&gt;
+
+    :::{.no-print}
+    &lt;p&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhMatsypura2025" aria-expanded="false" aria-controls="abstract-PhosavanhMatsypura2025"&gt;
+        Abstract
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhMatsypura2025" aria-expanded="false" aria-controls="bibtex-PhosavanhMatsypura2025"&gt;
+        BibTeX
+    &lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class="collapse" id="abstract-PhosavanhMatsypura2025"&gt;
+      &lt;p&gt;
+        The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of $O(|E||V|^2\Delta(G))$, where $|V|$ is the number of vertices, $|E|$ is the number of edges, and $\Delta(G)$ is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of $O(|E|^2|V|^2)$ on unweighted graphs and $O(|E|^2|V|^2 + |V|^2\log(|V|))$ on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="collapse" id="bibtex-PhosavanhMatsypura2025"&gt;
+      ```{}
+@article{PhosavanhMatsypura2025,
+    title =  {Centrality of shortest paths: algorithms and complexity result},
+    journal = {INFORMS Journal on Computing},
+    year = {2025},
+    doi = {10.1287/ijoc.2024.0945},
+    author = {Johnson Phosavanh and Dmytro Matsypura},
+    keywords = {degree centrality, betweenness centrality, closeness centrality, group centrality, computational complexity},
+    note = {Advance online publication.},
+    abstract = {The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of $O(|E||V|^2\Delta(G))$, where $|V|$ is the number of vertices, $|E|$ is the number of edges, and $\Delta(G)$ is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of $O(|E|^2|V|^2)$ on unweighted graphs and $O(|E|^2|V|^2 + |V|^2\log(|V|))$ on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.},
+}
+      ```
+    &lt;/div&gt;
+    :::
+
+
+1.  &lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(2025).Minimizing the number of late jobs and total late work with step-learning.&lt;em&gt;European Journal of Operational Research&lt;/em&gt;, &lt;em&gt;321&lt;/em&gt;(3), 734-749.&lt;a href="https://doi.org/10.1016/j.ejor.2024.09.042"&gt;https://doi.org/10.1016/j.ejor.2024.09.042&lt;/a&gt;
+
+    :::{.no-print}
+    &lt;p&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2025EJOR" aria-expanded="false" aria-controls="abstract-PhosavanhOron2025EJOR"&gt;
+        Abstract
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2025EJOR" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2025EJOR"&gt;
+        BibTeX
+    &lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class="collapse" id="abstract-PhosavanhOron2025EJOR"&gt;
+      &lt;p&gt;
+        We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is $\mathcal{NP}$-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly $\mathcal{NP}$-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="collapse" id="bibtex-PhosavanhOron2025EJOR"&gt;
+      ```{}
+@article{PhosavanhOron2025EJOR,
+    title = {Minimizing the number of late jobs and total late work with step-learning},
+    journal = {European Journal of Operational Research},
+    year = {2025},
+    issn = {0377-2217},
+    volume = {321},
+    number = {3},
+    pages = {734-749},
+    doi = {10.1016/j.ejor.2024.09.042},
+    author = {Johnson Phosavanh and Daniel Oron},
+    keywords = {Scheduling, Single-machine, Step-learning, Dynamic programming},
+    abstract = {We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is $\mathcal{NP}$-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly $\mathcal{NP}$-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.},
+}
+      ```
+    &lt;/div&gt;
+    :::
+
+
+1.  &lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(2025).Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions.&lt;em&gt;Journal of Scheduling&lt;/em&gt;.Advance online publication.&lt;a href="https://doi.org/10.1007/s10951-025-00853-0"&gt;https://doi.org/10.1007/s10951-025-00853-0&lt;/a&gt;
+
+    :::{.no-print}
+    &lt;p&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2025JoS" aria-expanded="false" aria-controls="abstract-PhosavanhOron2025JoS"&gt;
+        Abstract
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2025JoS" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2025JoS"&gt;
+        BibTeX
+    &lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class="collapse" id="abstract-PhosavanhOron2025JoS"&gt;
+      &lt;p&gt;
+        We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="collapse" id="bibtex-PhosavanhOron2025JoS"&gt;
+      ```{}
+@article{PhosavanhOron2025JoS,
+    title = {Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions},
+    journal = {Journal of Scheduling},
+    year = {2025},
+    doi = {10.1007/s10951-025-00853-0},
+    author = {Johnson Phosavanh and Daniel Oron},
+    keywords = {Two-agent scheduling, Single-machine, Rate-modifying activity, Dynamic programming},
+    note = {Advance online publication.},
+    abstract = {We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.},
+}
+      ```
+    &lt;/div&gt;
+    :::
+
+
+1.  &lt;strong&gt;Phosavanh, J.&lt;\strong&gt; &amp;amp; Oron, D.(2024).Two-agent single-machine scheduling with a rate-modifying activity.&lt;em&gt;European Journal of Operational Research&lt;/em&gt;, &lt;em&gt;312&lt;/em&gt;(3), 866-876.&lt;a href="https://doi.org/10.1016/j.ejor.2023.08.002"&gt;https://doi.org/10.1016/j.ejor.2023.08.002&lt;/a&gt;
+
+    :::{.no-print}
+    &lt;p&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2024" aria-expanded="false" aria-controls="abstract-PhosavanhOron2024"&gt;
+        Abstract
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2024" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2024"&gt;
+        BibTeX
+    &lt;/button&gt;
+    &lt;/p&gt;
+    &lt;div class="collapse" id="abstract-PhosavanhOron2024"&gt;
+      &lt;p&gt;
+        We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary $\mathcal{NP}$-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="collapse" id="bibtex-PhosavanhOron2024"&gt;
+      ```{}
+@article{PhosavanhOron2024,
+    title = {Two-agent single-machine scheduling with a rate-modifying activity},
+    journal = {European Journal of Operational Research},
+    year = {2024},
+    volume = {312},
+    pages = {866-876},
+    number = {3},
+    issn = {0377-2217},
+    doi = {10.1016/j.ejor.2023.08.002},
+    author = {Johnson Phosavanh and Daniel Oron},
+    keywords = {Scheduling, Single machine, Two-agents, Dynamic programming},
+    abstract = {We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary $\mathcal{NP}$-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.},
+}
+      ```
+    &lt;/div&gt;
+    :::
+</code></pre>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

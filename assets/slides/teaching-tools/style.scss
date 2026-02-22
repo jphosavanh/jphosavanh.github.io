@@ -1,0 +1,112 @@
+/*-- scss:defaults --*/
+
+// Global base font size
+$presentation-font-size-root: 36px;
+
+:root {
+    --accent: #3333b3;
+}
+
+.border {
+    border: 1px solid #dee2e6;
+}
+  
+.border-thick {
+    border-width: 3px;
+}
+
+/*-- scss:rules --*/
+
+#title-slide {
+    .title {
+        font-size: 1.2em;
+        color: white !important;
+        border-radius: 25px;
+        background-color: var(--accent) !important;
+        box-shadow: 5px 10px #777777;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 0.8em;
+    }
+
+    .quarto-title-author {
+        font-size: 0.8em;
+    }
+
+    .quarto-title-affiliation {
+        font-size: 0.7em;
+    }
+        
+    .date {
+        font-size: 0.8em;
+    }
+}
+
+section.slide h1 {
+    color: var(--accent) !important;
+}
+
+section.slide h2 {
+    color: white !important;
+    background-color: var(--accent) !important;
+    width: 200vw;
+    position: relative;
+    left: -20vw;
+    padding-left: 20vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+section.slide h3 {
+    font-size: 1.2em;
+}
+
+#TOC h2 {
+    color: white !important;
+    background-color: var(--accent) !important;
+    width: 200vw;
+    position: relative;
+    left: -20vw;
+    padding-left: 20vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.reveal .callout.callout-style-default div.callout-body {
+    font-size: 1.4em;
+}
+
+.table-striped {
+    > tbody > tr:nth-of-type(odd) > * {
+      background-color: #f2f2f2;
+    }
+
+    > tbody > tr {
+        border-bottom: 1pt solid black;
+    }
+
+    > thead {
+        background-color: #d2d2d2;
+      }
+  }
+
+.v-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.container{
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}

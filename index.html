@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-292da17cba5b85372dd6ccebd333db54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9c397cb09da994685e5757eadbac1855.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-292da17cba5b85372dd6ccebd333db54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0913ac70d569c22e8c5756b0c8057bb8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-4b4c6d1a45c279e4465eae23ef8afe98.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0913ac70d569c22e8c5756b0c8057bb8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -458,118 +493,114 @@ window.Quarto = {
 <section id="peer-reviewed-articles" class="level3">
 <h3 class="anchored" data-anchor-id="peer-reviewed-articles">Peer reviewed articles</h3>
 <ol type="1">
-<li><p><strong>Phosavanh J.</strong>, Matsypura, D. (2025). Centrality of shortest paths: algorithms and complexity results. <em>INFORMS Journal on Computing</em>. <a href="https://doi.org/10.1287/ijoc.2024.0945">https://doi.org/10.1287/ijoc.2024.0945</a></p>
+<li><p><strong>Phosavanh, J.</strong> &amp; Matsypura, D. (2025). Centrality of shortest paths: algorithms and complexity results. <em>INFORMS Journal on Computing</em>. Advance online publication. <a href="https://doi.org/10.1287/ijoc.2024.0945">https://doi.org/10.1287/ijoc.2024.0945</a></p>
 <div class="no-print">
 <p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-shortest-path-centrality" aria-expanded="false" aria-controls="abstract-shortest-path-centrality">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhMatsypura2025" aria-expanded="false" aria-controls="abstract-PhosavanhMatsypura2025">
 Abstract
 </button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-centrality-sp" aria-expanded="false" aria-controls="bibtex-centrality-sp">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhMatsypura2025" aria-expanded="false" aria-controls="bibtex-PhosavanhMatsypura2025">
 BibTeX
 </button>
 </p>
-<div id="abstract-shortest-path-centrality" class="collapse">
-<p>
-The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of <span class="math inline">\(O(|E||V|^2\Delta(G))\)</span>, where <span class="math inline">\(|V|\)</span> is the number of vertices, <span class="math inline">\(|E|\)</span> is the number of edges, and <span class="math inline">\(\Delta(G)\)</span> is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of <span class="math inline">\(O(|E|^2|V|^2)\)</span> on unweighted graphs and <span class="math inline">\(O(|E|^2|V|^2 + |V|^2\log(|V|))\)</span> on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.
-</p>
+<div id="abstract-PhosavanhMatsypura2025" class="collapse">
+<p>The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of <span class="math inline">\(O(|E||V|^2\Delta(G))\)</span>, where <span class="math inline">\(|V|\)</span> is the number of vertices, <span class="math inline">\(|E|\)</span> is the number of edges, and <span class="math inline">\(\Delta(G)\)</span> is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of <span class="math inline">\(O(|E|^2|V|^2)\)</span> on unweighted graphs and <span class="math inline">\(O(|E|^2|V|^2 + |V|^2\log(|V|))\)</span> on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.</p>
 </div>
-<div id="bibtex-centrality-sp" class="collapse">
-<pre><code>@article{PhosavanhMatsypura2025,
-title =  {Centrality of shortest paths: algorithms and complexity result},
-journal = {INFORMS Journal on Computing},
-year = {2025},
-doi = {10.1287/ijoc.2024.0945},
-author = {Johnson Phosavanh and Dmytro Matsypura},
-keywords = {degree centrality, betweenness centrality, closeness centrality, group centrality, computational complexity},
-}</code></pre>
+<div id="bibtex-PhosavanhMatsypura2025" class="collapse">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>@article{PhosavanhMatsypura2025,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title = {Centrality of shortest paths: algorithms and complexity results},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>journal = {INFORMS Journal on Computing},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>year = {2025},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>doi = {10.1287/ijoc.2024.0945},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>author = {Johnson Phosavanh and Dmytro Matsypura},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>keywords = {degree centrality, betweenness centrality, closeness centrality, group centrality, computational complexity},</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>note = {Advance online publication.},</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>abstract = {The centrality of a node is often used to measure its importance to the structure of a network. Some centrality measures can be extended to measure the importance of a path. In this paper, we consider the problem of finding the most central shortest path. We show that the computational complexity of this problem depends on the measure of centrality used and, in the case of degree centrality, whether the network is weighted or not. We develop a polynomial algorithm for the most degree-central shortest path problem with the worst-case running time of $O(|E||V|^2\Delta(G))$, where $|V|$ is the number of vertices, $|E|$ is the number of edges, and $\Delta(G)$ is the maximum degree of the graph. In addition, we show that the same problem is NP-hard on a weighted graph. Furthermore, we show that the problem of finding the most betweenness-central shortest path is solvable in polynomial time, while finding the most closeness-central shortest path is NP-hard, regardless of whether the graph is weighted or not. We also develop an algorithm for finding the most betweenness-central shortest path with a running time of $O(|E|^2|V|^2)$ on unweighted graphs and $O(|E|^2|V|^2 + |V|^2\log(|V|))$ on graphs with positively weighted edges. To conclude our paper, we conduct a numerical study of our algorithms on synthetic and real-world networks and compare our results to the existing literature.},</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions. <em>Journal of Scheduling</em>. <a href="https://doi.org/10.1007/s10951-025-00853-0">https://doi.org/10.1007/s10951-025-00853-0</a>.</p>
+<li><p><strong>Phosavanh, J.</strong> &amp; Oron, D. (2025). Minimizing the number of late jobs and total late work with step-learning. <em>European Journal of Operational Research</em>, <em>321</em>(3), 734-749. <a href="https://doi.org/10.1016/j.ejor.2024.09.042">https://doi.org/10.1016/j.ejor.2024.09.042</a></p>
 <div class="no-print">
 <p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-rma-weighted" aria-expanded="false" aria-controls="abstract-rma-weighted">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2025EJOR" aria-expanded="false" aria-controls="abstract-PhosavanhOron2025EJOR">
 Abstract
 </button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-rma-weighted" aria-expanded="false" aria-controls="bibtex-rma-weighted">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2025EJOR" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2025EJOR">
 BibTeX
 </button>
 </p>
-<div id="abstract-rma-weighted" class="collapse">
-<p>
-We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.
-</p>
+<div id="abstract-PhosavanhOron2025EJOR" class="collapse">
+<p>We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is <span class="math inline">\(\mathcal{NP}\)</span>-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly <span class="math inline">\(\mathcal{NP}\)</span>-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.</p>
 </div>
-<div id="bibtex-rma-weighted" class="collapse">
-<pre><code>@article{PhosavanhOron2025JoSH,
-title = {Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions},
-journal = {Journal of Scheduling},
-year = {2025},
-doi = {10.1007/s10951-025-00853-0},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Two-agent scheduling, Single-machine, Rate-modifying activity, Dynamic programming},
-}</code></pre>
+<div id="bibtex-PhosavanhOron2025EJOR" class="collapse">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>@article{PhosavanhOron2025EJOR,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title = {Minimizing the number of late jobs and total late work with step-learning},</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>journal = {European Journal of Operational Research},</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>year = {2025},</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>issn = {0377-2217},</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>volume = {321},</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>number = {3},</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>pages = {734-749},</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>doi = {10.1016/j.ejor.2024.09.042},</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>author = {Johnson Phosavanh and Daniel Oron},</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>keywords = {Scheduling, Single-machine, Step-learning, Dynamic programming},</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>abstract = {We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is $\mathcal{NP}$-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly $\mathcal{NP}$-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.},</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Minimizing the number of late jobs and total late work with step-learning. <em>European Journal of Operational Research, 321</em>(3), 734–749. <a href="https://doi.org/10.1016/j.ejor.2024.09.042">https://doi.org/10.1016/j.ejor.2024.09.042</a>.</p>
+<li><p><strong>Phosavanh, J.</strong> &amp; Oron, D. (2025). Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions. <em>Journal of Scheduling</em>. Advance online publication. <a href="https://doi.org/10.1007/s10951-025-00853-0">https://doi.org/10.1007/s10951-025-00853-0</a></p>
 <div class="no-print">
 <p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-step-learning" aria-expanded="false" aria-controls="abstract-step-learning">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2025JoS" aria-expanded="false" aria-controls="abstract-PhosavanhOron2025JoS">
 Abstract
 </button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-step-learning" aria-expanded="false" aria-controls="bibtex-step-learning">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2025JoS" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2025JoS">
 BibTeX
 </button>
 </p>
-<div id="abstract-step-learning" class="collapse">
-<p>
-We study single-machine scheduling problems with step-learning, where an improvement in processing time is experienced if a job is started at, or after, a job-dependent learning-date. We consider minimizing two functions: the number of late jobs and the total late work, and we show that when at least a common due-date or common learning-date is assumed, the problem is <span class="math inline">\(\mathcal{NP}\)</span>-hard in the ordinary sense; however, when both are arbitrary, the problem becomes strongly <span class="math inline">\(\mathcal{NP}\)</span>-hard. For each of the problems where at least one of the dates is assumed to be common, we analyze the structure of an optimal job schedule with and without idle time and propose pseudo-polynomial time dynamic programming algorithms. We also show that the problem of minimizing the weighted number of late jobs with step-learning can be solved with a minor change to the algorithms for the unweighted case. In addition to this, we show that when a common due-date is assumed and no idle time is allowed, the problem of minimizing the total late work is equivalent to that of minimizing the makespan. Furthermore, we provide a more efficient algorithm to solve the problem of minimizing makespan under the assumption of a common learning-date than the one in the existing literature. Lastly, we show that our analysis can also be applied to the case of step-deterioration, where instead, the processing times of jobs increase at a given date.
-</p>
+<div id="abstract-PhosavanhOron2025JoS" class="collapse">
+<p>We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.</p>
 </div>
-<p></p>
-<div id="bibtex-step-learning" class="collapse">
-<pre><code>@article{PhosavanhOron2025EJOR,
-title = {Minimizing the number of late jobs and total late work with step-learning},
-journal = {European Journal of Operational Research},
-year = {2025},
-issn = {0377-2217},
-volume = {321},
-number = {3},
-pages = {734-749},
-doi = {10.1016/j.ejor.2024.09.042},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Scheduling, Single-machine, Step-learning, Dynamic programming},
-}</code></pre>
+<div id="bibtex-PhosavanhOron2025JoS" class="collapse">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>@article{PhosavanhOron2025JoS,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title = {Single-machine two-agent scheduling with a rate-modifying activity and weighted due-date-related functions},</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>journal = {Journal of Scheduling},</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>year = {2025},</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>doi = {10.1007/s10951-025-00853-0},</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>author = {Johnson Phosavanh and Daniel Oron},</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>keywords = {Two-agent scheduling, Single-machine, Rate-modifying activity, Dynamic programming},</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>note = {Advance online publication.},</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>abstract = {We analyze two-agent scheduling problems with weighted due-date-related scheduling criteria and an optional rate-modifying activity that, when completed, allows jobs to be completed faster. We start with the single-agent problem of minimizing the total weighted late work and then extend the results over to two-agent problems involving combinations of the weighted number of late jobs and the total weighted late work. We examine the properties of optimal schedules and provide efficient pseudo-polynomial time algorithms to solve these problems.},</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></li>
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2024). Two-agent single-machine scheduling with a rate-modifying activity. <em>European Journal of Operational Research, 312</em>(3), 866–876. <a href="http://doi.org/10.1016/j.ejor.2023.08.002">http://doi.org/10.1016/j.ejor.2023.08.002</a>.</p>
+<li><p><strong>Phosavanh, J.</strong> &amp; Oron, D. (2024). Two-agent single-machine scheduling with a rate-modifying activity. <em>European Journal of Operational Research</em>, <em>312</em>(3), 866-876. <a href="https://doi.org/10.1016/j.ejor.2023.08.002">https://doi.org/10.1016/j.ejor.2023.08.002</a></p>
 <div class="no-print">
 <p>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-rma" aria-expanded="false" aria-controls="abstract-rma">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-PhosavanhOron2024" aria-expanded="false" aria-controls="abstract-PhosavanhOron2024">
 Abstract
 </button>
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-rma" aria-expanded="false" aria-controls="bibtex-rma">
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bibtex-PhosavanhOron2024" aria-expanded="false" aria-controls="bibtex-PhosavanhOron2024">
 BibTeX
 </button>
 </p>
-<div id="abstract-rma" class="collapse">
-<p>
-We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary <span class="math inline">\(\mathcal{NP}\)</span>-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.
-</p>
+<div id="abstract-PhosavanhOron2024" class="collapse">
+<p>We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary <span class="math inline">\(\mathcal{NP}\)</span>-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.</p>
 </div>
-<p></p>
-<div id="bibtex-rma" class="collapse">
-<pre><code>@article{PhosavanhOron2024,
-title = {Two-agent single-machine scheduling with a rate-modifying activity},
-journal = {European Journal of Operational Research},
-year = {2024},
-volume = {312},
-pages = {866-876},
-number = {3},
-issn = {0377-2217},
-doi = {10.1016/j.ejor.2023.08.002},
-author = {Johnson Phosavanh and Daniel Oron},
-keywords = {Scheduling, Single machine, Two-agents, Dynamic programming},
-}</code></pre>
+<div id="bibtex-PhosavanhOron2024" class="collapse">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>@article{PhosavanhOron2024,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title = {Two-agent single-machine scheduling with a rate-modifying activity},</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>journal = {European Journal of Operational Research},</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>year = {2024},</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>volume = {312},</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>pages = {866-876},</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>number = {3},</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>issn = {0377-2217},</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>doi = {10.1016/j.ejor.2023.08.002},</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>author = {Johnson Phosavanh and Daniel Oron},</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>keywords = {Scheduling, Single machine, Two-agents, Dynamic programming},</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>abstract = {We study single-machine scheduling problems involving a rate-modifying activity and two competing agents with due-date-related functions. Classical scheduling models assume that job processing times remain constant over time; however, in real-world settings, processing times may change due to factors such as technological upgrades or machine maintenance. We complement this with the notion of multiple independent agents competing over the use of a shared resource, each with their own motives. These considerations allow us to model the upcoming trend of the sharing economy, where resources are shared amongst independent competitors in the market. We aim to model these scenarios by considering a variety of scheduling criteria for each agent, including the makespan, the number of late jobs, and the total late work. To account for the change in processing times, we consider an optional rate-modifying activity that once completed, results in a reduction in subsequent job processing times. We show that problems involving the total late work are binary $\mathcal{NP}$-hard and propose efficient pseudo-polynomial dynamic programming algorithms for solving these problems. We also show that the remaining problems are solvable in polynomial time.},</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></li>
 </ol>
@@ -577,7 +608,7 @@ keywords = {Scheduling, Single machine, Two-agents, Dynamic programming},
 <section id="articles-under-review" class="level3">
 <h3 class="anchored" data-anchor-id="articles-under-review">Articles under review</h3>
 <ol type="1">
-<li><p><strong>Phosavanh J.</strong>, Oron, D. (2025). Minimizing total weighted late work with step-learning on a single machine. Submitted to <em>Discrete Applied Mathematics</em> (2nd round R&amp;R).</p>
+<li><p><strong>Phosavanh J.</strong> &amp; Oron, D. (2026). Minimizing total weighted late work with step-learning on a single machine. Submitted to <em>Discrete Applied Mathematics</em> (3rd round R&amp;R).</p>
 <div class="no-print">
 <p>
 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-step-learning-weighted" aria-expanded="false" aria-controls="abstract-step-learning-weighted">

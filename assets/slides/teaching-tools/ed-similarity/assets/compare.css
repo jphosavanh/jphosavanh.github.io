@@ -1,0 +1,108 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.filler {
+    position: relative;
+    flex: 1;
+}
+
+.split-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.split {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.split-right {
+    border-left: 1px solid silver;
+}
+
+.header {
+    padding: 0.5em 1em;
+    font-size: 16px;
+    border-bottom: 1px solid silver;
+}
+
+.content {
+    flex: 1;
+    position: relative;
+}
+
+.CodeMirror {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+
+.cursor {
+    z-index: 40;
+}
+
+.legend {
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+
+.section {
+    height: 12px;
+    cursor: pointer;
+}
+
+.CodeMirror-marker-0{background:hsla(16,81%,72%, .5);}
+.CodeMirror-marker-1{background:rgba(156,141,193,.5);}
+.CodeMirror-marker-2{background:rgba(201,151,192,.5);}
+.CodeMirror-marker-3{background:rgba(141,212,244,.5);}
+.CodeMirror-marker-4{background:rgba(147,177,220,.5);}
+.CodeMirror-marker-5{background:hsla(72,55%,75%, .5);}
+.CodeMirror-marker-6{background:rgba(149,203,157,.5);}
+.CodeMirror-marker-7{background:hsla(35,90%,77%, .5);}
+.CodeMirror-marker-8{background:hsla(16,81%,73%, .5);}
+
+.CodeMirror-linewidget {
+	overflow: initial;
+}
+
+.file-name-first {
+	float: right;
+	font-size: 14px;
+	color: #999;
+	text-align: right;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.file-name {
+	float: right;
+	font-size: 14px;
+	color: #999;
+	text-align: right;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.bar {;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-top: 1px solid silver;
+}

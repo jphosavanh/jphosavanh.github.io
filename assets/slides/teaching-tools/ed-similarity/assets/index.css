@@ -1,0 +1,17 @@
+
+.content-box {
+	display: table;
+    margin: 0 auto;
+}
+
+.main-table {
+	margin-top: 20px;
+}
+
+.graph-link {
+	margin-bottom: 0;
+    margin-top: -2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
+}
